@@ -1,0 +1,28 @@
+{
+  "name": "laboratorio-backend-gonzalosantillan-camilamolasgaitan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloSantillan-73/laboratorio-backend-GonzaloSantillan-CamilaMolasGaitan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GonzaloSantillan-73/laboratorio-backend-GonzaloSantillan-CamilaMolasGaitan/issues"
+  },
+  "homepage": "https://github.com/GonzaloSantillan-73/laboratorio-backend-GonzaloSantillan-CamilaMolasGaitan#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

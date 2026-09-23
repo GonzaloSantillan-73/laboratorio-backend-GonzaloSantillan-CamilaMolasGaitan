@@ -45,3 +45,15 @@ export const actualizarArtesanoId = (req, res, next) => {
     
     res.json(artesano)
 }
+
+export const eliminarArtesanoId = (req, res, next) => {
+    const id = parseInt(req.params.id)
+    const index = artesanos.findIndex(a => a.id === id)
+    if (index === -1) {
+        const error = new Error(`El artesano no existe`)
+        error.status = 404
+        return next(error)
+    }
+    artesanos.splice(index, 1)
+    res.status(204).send()
+}

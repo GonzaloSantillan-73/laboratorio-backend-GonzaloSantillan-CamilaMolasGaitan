@@ -1,5 +1,9 @@
 import { artesanos } from "../data/artesanos.js"
 
+export const mostrarArtesanos = (req, res) => {
+    res.json(artesanos)
+}
+
 export const crearArtesano = (req, res, next) => {
     if (!req.body.nombre || !req.body.localidad || !req.body.rubro) {
         const error = new Error(`Los campos 'nombre', 'localidad' y 'rubro' son obligatorios.`)
